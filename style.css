@@ -7,7 +7,8 @@ nav{
     align-items: center;
 }
 body{
-    background-color: #01161A;
+    background-color: #001114;
+    margin: 0;
 }
 span{
     color: #F4C095;
@@ -118,4 +119,48 @@ nav div{
     color: #F4C095;
     transition: all 0.3s ease;
     padding: 30px 50px;
+}
+footer{
+    background-color: #01161A;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer section div p.p1{
+    color: #F4C095;
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+footer section div p.p2{
+    color: #679289;
+    font-size: 10;
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+footer section div.redes{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+footer a{
+    color: #679289;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+footer a:hover{
+    color: #EE2E31;
+    text-decoration: underline;
+    text-decoration-color: #EE2E31;
+    text-decoration-thickness: 2px;
+    transition: all 0.3s ease;
 }
