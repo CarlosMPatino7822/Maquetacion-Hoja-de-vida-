@@ -455,7 +455,8 @@ circle {
 
 .contacto {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
     align-items: flex-start;
     width: 90%;
     margin: 0 auto;
@@ -467,16 +468,23 @@ circle {
     font-weight: 600;
     margin: 0;
 }
+.contacto-info{
+    width: 100%;
+}
 .contacto-info p{
     color: #BEC9C7;
     font-size: 20px;
     font-family: 'Manrope';
-    width: 70%;
+}
+.contacto-form{
+    flex: 1;
 }
 form{
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 form input, textarea{
     background-color: #01161A;
@@ -498,4 +506,53 @@ form button{
     border: none;
     cursor: pointer;
 }
-
+form button:hover{
+    background-color: #EE2E31;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    padding: 30px 50px;
+}
+.contacto-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.contacto-redes p.p1{
+    color: #BEC9C7;
+    font-size: 20px;
+    font-family: 'Manrope';
+}
+.contacto-redes i {
+    font-size: 30px;      /* tamaño del icono */
+    color: #1D7874;       /* color */
+}
+.contacto-redes-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contacto-redes-info p{
+    color: #BEC9C7;
+    font-size: 20px;
+    font-family: 'Manrope';
+}
+.btn-redes{
+    background-color: #EE2E31;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Manrope' 'bold';
+    border-radius: 2%;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+}
+.btn-redes:hover{
+    background-color: #EE2E31;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    padding: 30px 50px;
+}
