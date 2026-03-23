@@ -1,166 +1,476 @@
-nav{
+nav {
     display: flex;
     background-color: #01161A;
     padding: 10px 20px;
     justify-content: space-between;
-    list-style-type: none ;
+    list-style-type: none;
     align-items: center;
 }
-body{
+
+body {
     background-color: #001114;
     margin: 0;
 }
-span{
+
+span {
     color: #F4C095;
     font-size: 20px;
     font-family: 'Bold';
     margin: 0;
 }
-img.pequeño{
+
+img.pequeño {
     width: 100px;
     border-radius: 20%;
     margin-right: 20px;
 }
-img.logo{
+
+img.logo {
     width: 100%;
     border-radius: 20%;
 }
-nav a{
+
+nav a {
     color: #679289;
     text-decoration: none;
     margin-left: 20px;
     font-size: 20px;
 }
-nav a:hover{
+
+nav a:hover {
     color: #EE2E31;
     text-decoration: underline;
     text-decoration-color: #EE2E31;
     text-decoration-thickness: 2px;
     transition: all 0.3s ease;
 }
-nav div{
+
+nav div {
     display: flex;
     align-items: center;
 }
-.hero{
+
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
     gap: 40px;
 }
-.text{
+
+.text {
     flex: 1;
 }
-.image{
+
+.image {
     flex: 1;
 }
-.hero p{
+
+.hero p {
     color: #EE2E31;
     font-size: 20px;
     font-family: 'Manrope';
     font-weight: 600;
     margin: 0;
 }
-.hero h1{
+
+.hero h1 {
     color: #F4C095;
     font-size: 40px;
     font-family: 'Manrope';
     font-weight: 600;
     margin: -10px 0;
 }
-.hero h2{
+
+.hero h2 {
     color: #CFE7EC;
     font-size: 40px;
     font-family: 'Manrope';
     font-weight: 600;
     margin: 0;
 }
-.hero p.p1{
+
+.hero p.p1 {
     color: #679289;
     font-size: 20px;
     font-family: 'Manrope';
     margin: 0;
 }
 
-.hero img{
+.hero img {
     width: 500px;
     border-radius: 20%;
 }
-.hero button{
+
+.hero button {
     background-color: #EE2E31;
     color: #FFFFFF;
     font-size: 20px;
-    font-family: 'Manrope''bold';
+    font-family: 'Manrope' 'bold';
     border-radius: 2%;
     padding: 20px 40px;
     border: none;
     cursor: pointer;
 }
-.hero button.btn1{
+
+.hero button.btn1 {
     background-color: #01161A;
     color: #F4C095;
     font-size: 20px;
-    font-family: 'Manrope''bold';
+    font-family: 'Manrope' 'bold';
     border-radius: 2%;
     padding: 20px 40px;
     border: 2px solid #1D7874;
     cursor: pointer;
 }
 
-.hero button:hover{
+.hero button:hover {
     background-color: #EE2E31;
     color: #FFFFFF;
     transition: all 0.3s ease;
     padding: 30px 50px;
 }
-.hero button.btn1:hover{
+
+.hero button.btn1:hover {
     background-color: #01161A;
     color: #F4C095;
     transition: all 0.3s ease;
     padding: 30px 50px;
 }
-footer{
+
+footer {
     background-color: #01161A;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-footer section{
+
+footer section {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-footer section div p.p1{
+
+footer section div p.p1 {
     color: #F4C095;
     font-size: 20px;
     font-family: 'Manrope';
     font-weight: 600;
 }
-footer section div p.p2{
+
+footer section div p.p2 {
     color: #679289;
     font-size: 10;
     font-family: 'Manrope';
     font-weight: 600;
 }
-footer section div.redes{
+
+footer section div.redes {
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}    
-footer a{
+}
+
+footer a {
     color: #679289;
     text-decoration: none;
     margin-left: 20px;
     font-size: 20px;
 }
-footer a:hover{
+
+footer a:hover {
     color: #EE2E31;
     text-decoration: underline;
     text-decoration-color: #EE2E31;
     text-decoration-thickness: 2px;
     transition: all 0.3s ease;
 }
+
+.section {
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.left img {
+    width: 250px;
+    border-radius: 2%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.botoom {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.details,
+.linaje {
+    flex: 1;
+    background-color: #01161A;
+    padding: 10px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.linaje h3 {
+    color: #F4C095;
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: 600;
+    margin: 0;
+}
+
+.linaje p.contenido {
+    color: #BEC9C7;
+    margin: 0;
+}
+
+.cursos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.cursos p.titulos {
+    background-color: #23383C;
+    color: white;
+    padding: 10px;
+    border-radius: 2%;
+}
+
+.right p {
+    color: #FFB3AC;
+    font-size: 15px;
+    font-family: 'Manrope';
+    font-weight: 600;
+    margin: 0;
+}
+
+.right h1 {
+    color: #F4C095;
+    font-size: 50px;
+    font-family: 'Manrope';
+    font-weight: 600;
+    margin: 0;
+}
+
+.right p.p1 {
+    color: #679289;
+    font-size: 20px;
+    font-family: 'Manrope';
+    margin: 0;
+}
+
+.circle-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+svg {
+    transform: rotate(70deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 30;
+    cx: 75;
+    cy: 75;
+    r: 50;
+}
+
+
+.progress1 {
+    stroke: #EE2E31;
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    transition: stroke-dashoffset 1.5s ease;
+}
+
+.progress2 {
+    stroke: #1D7874;
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    transition: stroke-dashoffset 1.5s ease 0.5s;
+}
+
+.textico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+
+.left2 {
+    border-radius: 2%;
+    padding: 10px;
+    background-color: #01161A;
+}
+
+.left2 h2 {
+    color: #F4C095;
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: 600;
+    margin: 0;
+}
+
+.idiomas {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.idiomas p.p1 {
+    color: #EE2E31;
+    font-size: 20px;
+    font-family: 'Manrope';
+    text-decoration: underline;
+    text-decoration-color: #EE2E31;
+    text-decoration-thickness: 2px;
+    margin: 0;
+}
+
+.idiomas p.p2 {
+    color: #1D7874;
+    font-size: 20px;
+    font-family: 'Manrope';
+    text-decoration: underline;
+    text-decoration-color: #1D7874;
+    text-decoration-thickness: 2px;
+    margin: 0;
+}
+
+.right2 {
+    background-color: #01161A;
+    padding: 10px;
+    width: 100%;
+}
+
+.right2 h2 {
+    color: #F4C095;
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+
+.skill-row {
+    margin-bottom: 22px;
+}
+
+.skill-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: #c8d8d0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.skill-pct {
+    font-size: 14px;
+    color: #8ab8a8;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-pct.visible {
+    opacity: 1;
+}
+
+.bar-track {
+    height: 1.5px;
+    background: #1e3530;
+    border-radius: 2px;
+}
+
+.bar-fill {
+    height: 1.5px;
+    background: #4a8a74;
+    border-radius: 2px;
+    width: 0%;
+    position: relative;
+    transition: width 1.1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.bar-fill::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background: #7acca8;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease 0.8s;
+}
+
+.bar-fill.done::after {
+    opacity: 1;
+}
+
+.contacto {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+}
+.contacto h1{
+    color: #F4C095;
+    font-size: 50px;
+    font-family: 'Manrope';
+    font-weight: 600;
+    margin: 0;
+}
+.contacto-info p{
+    color: #BEC9C7;
+    font-size: 20px;
+    font-family: 'Manrope';
+    width: 70%;
+}
+
